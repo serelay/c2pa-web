@@ -1,0 +1,33 @@
+/*
+Copyright © 2021 Serelay Ltd. All rights reserved.
+*/
+$body-color: black;
+$serelay-green: #3ebe95;
+
+body {
+  color: $body-color;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: bold;
+}
+
+td img {
+  display:block;
+  margin:auto;
+}
+
+tr {
+  &:nth-child(even) {
+   background-color: #f2f2f2;
+  }
+
+  &:last-of-type {
+    border-bottom: 2px solid $serelay-green;
+  }
+}
